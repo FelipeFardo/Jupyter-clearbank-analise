@@ -39,21 +39,23 @@ O desenvolvimento e a execução foram realizados em ambiente Docker utilizando 
 
 O arquivo CSV deve conter as seguintes colunas:
 
-| Campo      | Descrição                    |
-| ---------- | ---------------------------- |
-| id         | Identificador da transação   |
-| cliente_id | Identificador do cliente     |
-| data       | Data da transação            |
-| tipo       | credito ou debito            |
-| valor      | Valor monetário da transação |
+| Coluna     | Tipo esperado | Descrição                                                          |
+| ---------- | ------------- | ------------------------------------------------------------------ |
+| id         | inteiro       | Identificador único da transação                                   |
+| data       | texto         | Data da transação no formato `AAAA-MM-DD`                          |
+| cliente_id | texto         | Código do cliente (não pode ser vazio)                             |
+| tipo       | texto         | Tipo da transação: `credito` ou `debito`                           |
+| valor      | decimal       | Valor da transação (deve ser maior que `0`)                        |
+| descricao  | texto         | Descrição livre da operação                                        |
+| categoria  | texto         | Categoria da transação (ex.: `salario`, `compra`, `transferencia`) |
 
 ### Exemplo
 
 ```csv
-id,cliente_id,data,tipo,valor
-1,CLI001,2026-01-10,credito,1500.00
-2,CLI001,2026-01-15,debito,200.00
-3,CLI002,2026-02-05,credito,5000.00
+id,data,cliente_id,tipo,valor,descricao,categoria
+1,2026-01-05,CLI001,credito,3500.00,Salário mensal,salario
+2,2026-01-10,CLI001,debito,250.50,Compra supermercado,compra
+3,2026-01-15,CLI002,debito,1200.00,Pagamento aluguel,moradia
 ```
 
 ---
