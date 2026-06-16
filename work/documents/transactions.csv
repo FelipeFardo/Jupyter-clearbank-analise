@@ -1,0 +1,21 @@
+id,data,cliente_id,tipo,valor,descricao,categoria
+1,2026-01-05,CLI001,credito,3500.00,Salário janeiro,salario
+2,2026-01-12,CLI002,debito,180.50,Supermercado,compra
+3,2026-01-18,CLI003,debito,250.00,Conta de água,conta
+4,2026-02-03,CLI001,debito,420.90,Farmácia,saude
+5,2026-02-14,CLI003,credito,15000.00,Transferência recebida,transferencia
+6,2026-02-18,CLI002,debito,320.00,Conta de luz,conta
+7,2026-03-01,CLI001,credito,3500.00,Salário março,salario
+8,2026-03-10,CLI003,debito,99.90,Streaming,assinatura
+9,2026-03-15,CLI004,debito,780.00,Compra eletrônicos,compra
+10,2026-03-28,CLI002,credito,12000.00,Bônus anual,bonus
+11,2026-04-02,CLI005,debito,210.45,Combustível,transporte
+12,2026-04-09,CLI001,debito,560.00,Mercado,compra
+13,2026-04-21,CLI004,credito,4300.00,Prestação serviço,renda
+14,2026-05-05,CLI003,debito,89.99,Aplicativo,assinatura
+15,2026-05-19,CLI005,credito,2750.00,Reembolso,transferencia
+16,2026-03-20,CLI001,debito,abc,Valor inválido,compra
+17,2026-02-03,,debito,200.00,Sem cliente,transferencia
+18,2026-13-01,CLI002,credito,500.00,Data inválida,salario
+19,2026-04-10,CLI003,saque,300.00,Tipo inválido,conta
+20,2026-05-30,CLI004,debito,,Valor ausente,compra

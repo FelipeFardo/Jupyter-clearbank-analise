@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  jupyter:
+    image: jupyter/base-notebook
+    restart: unless-stopped
+    ports:
+      - "8888:8888"
+    environment:
+      - JUPYTER_TOKEN=desafio-analise-financeira
+    volumes:
+      - ./work:/home/jovyan/work
