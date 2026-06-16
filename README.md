@@ -221,9 +221,9 @@ project-data/
 │   │
 │   └── notebooks/
 │       └── desafio_final.ipynb
-        └── analise_pandas.ipynb
-        └── relatorio.json
-        └── grafico.png
+│       └── analise_pandas.ipynb
+│       └── relatorio.json
+│       └── grafico.png
 │
 └── docker-compose.yaml
 └── README.md
